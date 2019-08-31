@@ -2,4 +2,4 @@
 
 Obs: eu e o Caio vamos tentar deixar organizado dessa vez
 
-![alt text](https://web.facebook.com/photo.php?fbid=504268100389787&set=gm.949519172059206&type=3&eid=ARAPR8w9Xs4C4l8RBQ_gxKoeQD8Ml_H6fInCp97nrJbKzqrIKxdbk89UA0-HuevHMhct-JLzHh3vmRE2&ifg=1)
+![alt text](https://scontent.fcgh1-1.fna.fbcdn.net/v/t1.0-9/69243851_504268103723120_3668053043179421696_n.jpg?_nc_cat=111&_nc_eui2=AeF6XUM0XKj8Ut9T4DsRu5ZkhYZI2Dy-w3n68vlJmbNe-Yk0nIs_muCPCxFsp7b_HV83_zJj_EeUweo2R-XR1BYG09zQDRUcXe0zBc9h0ogCkw&_nc_oc=AQlhH4geQrtBjJwnrKuybNoCjSSsfJqoVi6bFyamhsXNlaXHEyGiXRBymbYlDIrnMfs&_nc_ht=scontent.fcgh1-1.fna&oh=fd96920a4e517a909cf42ab452401aea&oe=5E0EE360)
