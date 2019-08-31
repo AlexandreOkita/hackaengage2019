@@ -1,4 +1,4 @@
-<h1>Hackathon da Campus Party!!! \O/ <\h1>
+<h1>Hackathon da Campus Party!!! \O/ </h1>
 
 Obs: eu e o Caio vamos tentar deixar organizado dessa vez
 
