@@ -1,4 +1,5 @@
 from flask import Flask, render_template, request, redirect
+from get import get_info
 from flask_bootstrap import Bootstrap
 from meuprimeirobd import set_info
 app = Flask(__name__)
@@ -6,7 +7,8 @@ Bootstrap(app)
 
 @app.route('/')
 def index():
-    return render_template('index.html', desc = 'TOMARA QUE ISSO DÊ CERTO!')
+    lista = get_info() 
+    return render_template('index.html', lista = lista)
 
 @app.route('/caio', methods=['POST', 'GET'])
 def caio():
