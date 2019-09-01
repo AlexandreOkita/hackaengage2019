@@ -23,6 +23,11 @@
 </head>
 
 <body>
+        <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase-app.js"></script>
+
+        <!-- Add Firebase products that you want to use -->
+        <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase-database.js"></script>
     <header>
         <div>
             <h1 id="title">MAllup</h1>
@@ -146,6 +151,8 @@
                         <input class="input2" type="text" id="data" name="Data" placeholder="data..."><br>
                         <input id="okay" type="submit" value="enviar" sendMessage() >
                         <img id="img-modal" src="Assets/imagem.svg"></img>
+                        <progress value="0" mac="100" id="uploader">0</progress>
+                        <input type="file" value="upload" id="fileButton">
                     </form>
             </div>
 
@@ -168,7 +175,23 @@
             <img class="image-vector-2" src="./Assets/vector4.svg"></img>
         </div>
     </footer>
+    <script>
+        var config = {
+            apiKey: 'AIzaSyDbTLSOPNwsnCjm3rgYOqVGNt-uQLPK6EM',
+            authDomain: 'malltup-hackengage.firebaseapp.com',
+            databaseURL: 'https://malltup-hackengage.firebaseio.com',
+            storageBucket: 'projectId.appspot.com',
+        };
+        firebase.initializeApp(config);
+        var uploader = document.getElementById('uploader');
+        var fileButton = document.getElementById('fileButton');
 
+        fileButton.addEventListener('change', function(e) {
+            var file = e.target.files[0];
+            firebase.storage().ref('images/' +file.name);
+            var task = storageRef.put(file);
+        });
+    </script>
     <script src="slider.js"></script>
 
 </body>
