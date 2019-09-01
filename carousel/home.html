@@ -149,10 +149,8 @@
                         <input class="input1" type="text" id="descricao" name="Description" placeholder="descrição..."><br>
                         <input class="input1" type="text" id="local" name="Local" placeholder="Local..."><br>
                         <input class="input2" type="text" id="data" name="Data" placeholder="data..."><br>
-                        <input id="okay" type="submit" value="enviar" sendMessage() >
-                        <img id="img-modal" src="Assets/imagem.svg"></img>
-                        <progress value="0" mac="100" id="uploader">0</progress>
                         <input type="file" value="upload" id="fileButton">
+                        <input id="okay" type="submit" value="enviar" sendMessage() >
                     </form>
             </div>
 
@@ -183,7 +181,6 @@
             storageBucket: 'projectId.appspot.com',
         };
         firebase.initializeApp(config);
-        var uploader = document.getElementById('uploader');
         var fileButton = document.getElementById('fileButton');
 
         fileButton.addEventListener('change', function(e) {

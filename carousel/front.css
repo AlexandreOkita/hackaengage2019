@@ -120,7 +120,7 @@ footer {
   
   #form {
     width: 60vw;
-    height: 25vh;
+    height: 30vh;
     margin:0;
     padding:0;
     background-color: #67C0C6;
@@ -147,7 +147,7 @@ footer {
   }
   
   .input2 {
-    width:30vw;
+    width:45vw;
     height: 3vh;
     border: 0.1em solid white;
     margin-top: 1.5vh;
@@ -161,7 +161,7 @@ footer {
   
   #okay {
     border: 0.1rem solid white;
-    width:30vw;
+    width:45vw;
     height: 3vh;
     margin-top: 1.5vh;
     margin-left: 7vw; 
@@ -181,3 +181,17 @@ footer {
     text-align:center;
   }
   
+  #fileButton {
+    width:32vw;
+    height: 3vh;
+    margin-top: 1.5vh;
+    margin-left: 12vw; 
+    border-top-width:0.2em;
+    border-left-width: 0.2em;
+    border-width: 0.2em;
+    border-radius:2rem;
+  }
+
+  ::-webkit-input-placeholder { /* Edge */
+    color:white;
+  }
