@@ -4,9 +4,9 @@ class Slider {
         this.el = el
         this.container = this.el.querySelector('.slides-container')
         this.slides = this.container.querySelectorAll('.slide')
-        this.parallaxes = this.container.querySelectorAll('.parallax')
+        // this.parallaxes = this.container.querySelectorAll('.parallax')
 
-        this.current = 0;
+        this.current = 0;4
         this.currentPos
         this.mouseOffset
         this.moving = false
@@ -53,14 +53,14 @@ class Slider {
         window.addEventListener('mousemove', dragMove)
         this.container.addEventListener('touchmove', dragMove)
 
-        window.addEventListener('keydown', (e) => {
-            e = e || window.event;
-            if (e.keyCode == '39') { // right arrow
-                this.next()
-            } else if (e.keyCode == '37') { // left arrow
-                this.prev()
-            }
-        })
+        // window.addEventListener('keydown', (e) => {
+        //     e = e || window.event;
+        //     if (e.keyCode == '39') { // right arrow
+        //         this.next()
+        //     } else if (e.keyCode == '37') { // left arrow
+        //         this.prev()
+        //     }
+        // })
     }
 
     move() {
@@ -74,16 +74,14 @@ class Slider {
                 $_slide.style.opacity = .5 + (coef * .5)
                 $_slide.style.transform = 'scale(' + (.9 + coef * .1) + ')'
             })
-            this.parallaxes.forEach(($_item, i) => {
-                const coef = this.slides[i].getBoundingClientRect().left / slideWidth
-                $_item.style.opacity = 1 - Math.abs(coef * 1.8)
-                $_item.style.transform = 'translate3d(' + (-coef * 85) + '%, 0, 0)'
-            })
+            // this.parallaxes.forEach(($_item, i) => {
+            //     const coef = this.slides[i].getBoundingClientRect().left / slideWidth
+            //     $_item.style.opacity = 1 - Math.abs(coef * 1.8)
+            //     $_item.style.transform = 'translate3d(' + (-coef * 85) + '%, 0, 0)'
+            // })
             requestAnimationFrame(this.move.bind(this))
         }
     }
-
-
 }
 
 const $sliders = document.querySelectorAll('.slider')
