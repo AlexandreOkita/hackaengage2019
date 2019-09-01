@@ -91,6 +91,24 @@ footer {
 }
 
 
+.button {
+    position: absolute;
+    bottom: 2.5rem;
+    left: 11.5rem;
+    width: 60px;
+    height: 60px;
+    border: 1px solid #cdcdcd;
+    background: white;
+    border-radius: 30px;
+    z-index: 99;
+    -webkit-box-shadow: 2px 12px 20px 0px rgba(148,148,148,0.69);
+    -moz-box-shadow: 2px 12px 20px 0px rgba(148,148,148,0.69);
+    box-shadow: 2px 12px 20px 0px rgba(148,148,148,0.69);}
+.button span {
+    font-size: 2rem;
+    color: #538498;
+    
+}
 .modal {
     left: 6rem !important;
     top: 25rem !important;

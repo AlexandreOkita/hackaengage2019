@@ -131,7 +131,3 @@ body {
     font-family: Circular, sans-serif;
     font-size: 3em;
 }
-
-::-webkit-input-placeholder { /* Edge */
-    color: white;
-  }
