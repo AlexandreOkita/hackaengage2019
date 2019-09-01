@@ -24,5 +24,3 @@ def get_info():
     for i in range(len(lista)):
         lista_invertida.append(lista[-i-1])
     return lista_invertida
-
-print(get_info())

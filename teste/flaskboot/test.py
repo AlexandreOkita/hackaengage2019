@@ -2,17 +2,25 @@ from flask import Flask, render_template, request, redirect
 from get import get_info
 from flask_bootstrap import Bootstrap
 from meuprimeirobd import set_info
-app = Flask(__name__)
-Bootstrap(app)
+import random as rd
 
-@app.route('/')
+
+def create_app():
+  app = Flask(__name__)
+  Bootstrap(app)
+  return app
+
+app = create_app()
+
+@app.route('/', methods=['GET'])
 def index():
-    lista = get_info() 
-    return render_template('index.html', lista = lista)
+    return render_template('index.html')
 
-@app.route('/caio', methods=['POST', 'GET'])
+@app.route('/home.html', methods=['POST', 'GET'])
 def caio():
-    return render_template('events.html')
+    lista = get_info()
+    imagens = ['static/img1.jpg','static/img2.jpg','static/img3.jpg','static/img4.jpg','static/img5.jpg']
+    return render_template('home.html', lista = lista, imgs = imagens)
 
 @app.route('/handle_data', methods=['GET','POST'])
 def handle_data():
@@ -22,7 +30,7 @@ def handle_data():
     data = request.form["Data"]
 
     set_info(titulo, desc, local, data)
-    return redirect("/caio")
+    return redirect("/home.html")
 
 if __name__ == '__main__':
     app.run(debug=True)
