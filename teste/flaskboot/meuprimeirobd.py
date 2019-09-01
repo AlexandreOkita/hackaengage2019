@@ -10,7 +10,12 @@ config = {
 
 firebase = pyrebase.initialize_app(config)
 db = firebase.database()
-archer = {"name": "Sterling Archer", "agency": "Figgis Agency"}
-db.child("arqueiros").push(archer)
-users = db.child("arqueiros").get()
-print(users.val()) # {"Morty": {"name": "Mortimer 'Morty' Smith"}, "Rick": {"name": "Rick Sanchez"}}
+
+def set_info(titulo, desc, local, data):
+  evento1 = {"Titulo": titulo, "Descricao": desc, "Local": local, "Data": data}
+  db.child("Eventos").push(evento1)
+
+def get_info():
+  firebase = pyrebase.initialize_app(config)
+  db = firebase.database()
+  return [db.child('Eventos').child('data').get().val()]

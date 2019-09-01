@@ -1,11 +1,11 @@
 <html>
     <head>
-        <script src="static/app.js"></script>
+        <script src="app.js"></script>
         <script src="https://www.gstatic.com/firebasejs/5.10.0/firebase.js"></script>
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-        <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/index.css') }}">
+        <link rel="stylesheet" type="text/css" href="index.css" media="screen" />
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     </head>
     <body>
@@ -19,31 +19,31 @@
             Launch demo modal
             </button>
             <div class="modal" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <form action="{{ url_for('handle_data') }}" method="post" id='form'>
-                        <input class="input1" type="text" id="titulo" name="TitleEvent"><br>
+                    <form action="" method="POST" id="form">
+                        <input class="input1" type="text" id="titulo" name="TitleEvent" value="TÍTULO"><br>
                         <input class="input1" type="text" id="descricao" name="Description" value="DESCRIÇÂO"><br>
                         <input class="input1" type="text" id="local" name="Local" value="LOCAL"><br>
                         <input class="input2" type="text" id="data" name="Data" value="DATA"><br>
                         <input id="okay" type="submit" value="ENVIAR" sendMessage() >
-                        <img id="img-modal" src="static/Assets/imagem.svg"></img>
+                        <img id="img-modal" src="Assets/imagem.svg"></img>
                     </form>
             </div>
         </main>
         <footer>
             <div class="div-footer">
-                <img class="image-vector" src="static/Assets/Vector.svg"></img>
+                <img class="image-vector" src="./Assets/Vector.svg"></img>
                 <h5 class="text-footer">Favoritos</h5>
             </div>
             <div class="div-footer">
-                <img class="image-vector" src="static/Assets/vector2.svg"></img>
+                <img class="image-vector" src="./Assets/vector2.svg"></img>
                 <h5 class="text-footer">Procurar</h5>
             </div>
             <div class="div-footer">
-                <img class="image-vector" src="static/Assets/vector3.svg"></img>
+                <img class="image-vector" src="./Assets/vector3.svg"></img>
                 <h5 class="text-footer">Mensagens</h5>
             </div>
             <div class="div-footer">
-            <img class="image-vector-2" src="static/Assets/vector4.svg"></img>
+            <img class="image-vector-2" src="./Assets/vector4.svg"></img>
             </div>
         </footer>
     </body>
