@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css?family=Righteous');
+@import url('https://fonts.googleapis.com/css?family=Quattrocento+Sans');
+@import url('https://fonts.googleapis.com/css?family=Assistant:700&display=swap');
+body {
+    padding: 0;
+    margin: 0;
+    max-height: 100vh;
+}
+
+header {
+    background-color: #5CBBD0;
+    width: 100%;
+    height: 8vh;
+}
+
+h1 {
+    margin: 0;
+}
+.eventos h1{
+    color: #538498;
+    font-family: 'Assistant';
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    margin-left: 1.5rem;
+}
+.eventos .line {
+    margin-left: 1.5rem;
+    width: 60%;
+    height: 2px;
+    background: #538498;
+}
+#title {
+    vertical-align: center;
+    font-size: 2rem;
+    color: white;
+    font-family: 'Righteous';
+    padding-top: 1vh;
+    padding-left: 5vw;
+}
+
+footer {
+    background-color: #5CBBD0;
+    width: 100%;
+    height: 8vh;
+    overflow: hidden;
+
+}
+
+.div-footer {
+    height: 8vh;
+    width: 25%;
+    float: left;
+    box-sizing: border-box;
+}
+
+.text-footer {
+    font-family: 'Quattrocento Sans';
+    padding-left: 7vw;
+    padding-top: 0.5vh;
+    font-size: 1.5rem;
+    color: white;
+    height: 1.5vh;
+    margin: 0;
+}
+
+.image-vector {
+    width: 9vw;
+    height: 3vh;
+    padding-left: 7vw;
+    padding-top: 1.5vh;
+}
+
+.image-vector-2 {
+    width: 12vw;
+    height: 5vh;
+    padding-left: 7vw;
+    padding-top: 1.5vh;
+}
