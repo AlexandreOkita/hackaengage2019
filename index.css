@@ -141,3 +141,7 @@ footer {
 input[type=text]{
   text-align:center;
 }
+
+::-webkit-input-placeholder { /* Edge */
+  color: white;
+}
